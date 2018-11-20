@@ -1,0 +1,21 @@
+#name {
+    font-size: 50px;
+}
+
+#info {
+    font-size: 25px;
+}
+
+.img-fluid {
+    height: 200px;
+    width: 300px;
+  }
+  
+  .img-portrait {
+    height: 200px;
+    width: 250px;
+  }
+  
+  .lead {
+    font-size: 18px;
+  }
