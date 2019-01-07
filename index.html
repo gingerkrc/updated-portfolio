@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
@@ -58,14 +58,14 @@
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <h1 class="text-uppercase mb-0" id="name">Ginger Richards Conly</h1>
-        <h2 class="font-weight-light mb-0" id="info">Web Developer - Librarian - Information Junkie</h2>
+        <h2 class="font-weight-light mb-0" id="info">Librarian - Web Developer - Music Devotee</h2>
       </div>
     </header>
 
     <!-- Portfolio Grid Section -->
     <section class="portfolio" id="portfolio">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <h2 class="text-center text-uppercase text-secondary mb-0">Projects</h2>
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
@@ -114,7 +114,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/AncientCoin.jpg" alt="Ancient Coin Game">
+              <img class="img-fluid" src="img/portfolio/GothFinder.jpg" alt="GothFinder">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -124,7 +124,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/PsychicGame.jpg" alt="Psychic Game">
+              <img class="img-fluid" src="img/portfolio/AncientCoin.jpg" alt="Ancient Coin Collector Game">
             </a>
           </div>
         </div>
@@ -140,28 +140,62 @@
             <img class="img-portrait" src="img/portfolio/Ginger1.jpeg" alt="GRC - photo">
           </div>
           <div class="col-lg-9 mr-auto">
-            <p class="lead">A Boulder, CO native now living in Denver with my husband, two children, and two cats. 
-              I attended the University of Colorado at Denver, where I received a Bachelor of Science in Music with a minor in studio arts. 
-              After several years of working in public libraries, I moved to Washington DC and received a Master of Science in Library Science with a specialization in Music Librarianship at Catholic Univeristy of America.
-              Beyond my academic and professional pursuits, I have performed music since I was a child and have played in several garage, punk, and indie-pop bands in both Denver and Washington DC. 
-              Currently I am building my portfolio as a web developer, which has been allowing me to exercise my analytical skills along with my creativity.</p>
+            <p class="lead">I grew up in Boulder, CO and have been fixated with music from a young age. In junior high I received a large collection of discarded music magazines from a librarian who was aware of my obsession, thus seeding my interest in library science. 
+              Upon receiving a Bachelor of Science in Music from the University of Colorado at Denver and working in public libraries, I eventually moved to Washington, DC where I received a Master of Science in Library Science with a specialization in Music Librarianship.  
+              I am currently a student at the University of Denver’s Coding Boot Camp adding full-stack web development to my professional repertoire.  
+              In addition to my academic and professional pursuits, I have played in several garage, punk, and indie-pop bands in both Denver and Washington DC.</p>
           </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-          <p class="text-center"><i class="fa fa-envelope mr-2" aria-hidden="true"></i>gingerkr@gmail.com</p>
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+    <hr class="star-dark mb-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Name</label>
+              <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+              <p class="help-block text-danger"></p>
+            </div>
           </div>
-        </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Email Address</label>
+              <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Phone Number</label>
+              <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+          </div>
+        </form>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="container">
@@ -175,7 +209,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a class="btn btn-outline-dark btn-social text-center rounded-circle" href="file:///Users/gingerkr/Desktop/code/updated-portfolio/CV_GingerRConly_2018.pdf" download>
+                <a class="btn btn-outline-dark btn-social text-center rounded-circle" href="https://drive.google.com/file/d/1MTqLGtFH-bjplMG3t01IGfv1Vpeo6AKm/view?usp=sharing" download>
                   <i class="fab fa-fw fa-file"></i>
                 </a>
               </li>
@@ -284,7 +318,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Crazy Train Schedule</h2>
               <img class="img-fluid mb-5" src="img/portfolio/Crazytrain.jpg" alt="Crazy Train Schedule">
-              <p class="mb-5">API search of Giphy fail gifs.</p>
+              <p class="mb-5">Train Schedule using Moment.js</p>
               <a href="https://gingerkrc.github.io/trainschedule/">View the project</a><br>
               <a href="https://github.com/gingerkrc/trainschedule">View the repository</a><br>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
@@ -305,11 +339,11 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Psychic Game</h2>
-              <img class="img-fluid mb-5" src="img/portfolio/PsychicGame.jpg" alt="Psychic Game">
-              <p class="mb-5">Train Schedule using Moment.js</p>
-              <a href="https://gingerkrc.github.io/psychic-game/">View the project</a><br>
-              <a href="https://github.com/gingerkrc/psychic-game">View the repository</a><br>
+              <h2 class="text-secondary text-uppercase mb-0">GothFinder</h2>
+              <img class="img-fluid mb-5" src="img/portfolio/GothFinder.jpg" alt="GothFinder">
+              <p class="mb-5">Compatibility app using Node.js and Express Servers</p>
+              <a href="https://stark-basin-37563.herokuapp.com/">View the project</a><br>
+              <a href="https://github.com/gingerkrc/FriendFinder">View the repository</a><br>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a>
